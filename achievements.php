@@ -1,11 +1,5 @@
 <?php
-// --- DATABASE CONNECTION ---
-$servername = "localhost";
-$username = "journal";
-$password = "SECUREPASSWORDHERE";
-$dbname = "dreamJournal";
-
-$conn = new mysqli($servername, $username, $password, $dbname);
+include 'config.php';
 
 // 1. Get the total count
 $total_res = $conn->query("SELECT COUNT(*) as total FROM dreams");
